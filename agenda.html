@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Website - Honeywell Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agenda</h1>
+        <p id="current-date"></p>
+        <p>Location: GOL-3000</p>
+    </header>
+
+    <section class="weekly-grid">
+        <div class="weekly-box">
+            <h2>Meeting Objectives</h2>
+            <ul>
+                <li>Sandbox(Dnd)</li>
+                <li>Jira</li>
+                <li>Technical Discussion</li>
+            </ul>
+        </div>
+        
+        <div class="weekly-box">
+            <h2>Agenda Items</h2>
+            <ul>
+                <li><b>Sandbox/Document Review (DnD)</b></li>
+                <ul>
+                    <li>walk through of the current system code(Honeywell)</li>
+                    <li>Architectural Documentation about the system (Honeywell)</li>
+                    <li>Team questions (DnD)</li>
+                </ul>
+                <li><b>Jira</b></li>
+                <ul>
+                    <li>Jira Review with Honeywell(DnD)</li>
+                </ul>
+                <li><b>Technical Discussion</b></li>
+                <ul>
+                    <li>Go over team team observation of source code(DnD)</li>
+                    <li>API Calls</li>
+                    <li>Database</li>
+                </ul>
+            </ul>
+        </div>
+        
+    </section>
+
+    <script>
+        // JavaScript to display today's date
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current-date').textContent = today.toLocaleDateString(undefined, options);
+    </script>
+    
+    <footer>
+        <p>&copy; 2024 Team DND - Honeywell Project</p>
+    </footer>
+</body>
+</html>
